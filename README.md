@@ -1,3 +1,45 @@
+# Initial MobX Setup (after fresh create-react-app)
+
+### Eject from react-scripts
+
+```
+npm run eject
+```
+
+### Babel config
+
+Install Babel plugin
+
+```
+npm install --save-dev @babel/plugin-proposal-decorators 
+```
+
+Add the plugin in **package.json** (in Babel config. section)
+
+```
+"babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ]
+    ]
+  }
+```
+
+### Install MobX itself
+
+```
+npm install mobx mobx-react
+```
+
+## ORIGINAL README.md (GENERATED FROM CREATE REACT APP BELOW)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
